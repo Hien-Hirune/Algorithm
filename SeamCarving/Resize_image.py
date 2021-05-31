@@ -67,14 +67,14 @@ def remove_Seam(I, path):
 
 def main():
     # Buoc 1: Đọc ảnh màu
-    #print('Nhap ten anh (kem duong dan): ')
-    #img_name = str(input())
-    #print('Nhap so luong pixel can thu hep: ')
-    #count = int(input())
-    #print('Nhap duong dan luu anh: ')
-    #img_path_save = str(input())
+    print('Nhap ten anh (kem duong dan): ')
+    img_name = str(input())
+    print('Nhap so luong pixel can thu hep: ')
+    count = int(input())
+    print('Nhap duong dan luu anh: ')
+    img_path_save = str(input())
     
-    Img = cv2.imread("image4.jpg", 1)
+    Img = cv2.imread(img_name, 1)
     cv2.imshow('Anh goc', Img)
     print('Kich thuoc ban dau cua Img: ', Img.shape)
 
