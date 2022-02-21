@@ -16,9 +16,9 @@ hàng đợi và cập nhật thêm các trạng thái con của nút vừa lấ
   - Ưu điểm: dùng trong đồ thị có trọng số để tìm được đường đi có chi phí nhỏ nhất.
   - Khuyết điểm: có thể bị lặp vô hạn nếu gặp một nút có chi phí chuyển đổi tới cùng trạng thái đó bằng 0. Tốn bộ nhớ và thời gian tính toán, cập nhật chi phí trên mỗi nút.
   
-## 4. Thuật toán A***:
-    - Ý tưởng: Thuật toán này đánh giá một nút dựa trên chi phí từ nút gốc tới nút đó – g(n), cộng với chi phí từ nút đó đến đích – h(n). 
-                                                        f(n) = g(n) + h(n)
+## 4. Thuật toán A*:
+   - Ý tưởng: Thuật toán này đánh giá một nút dựa trên chi phí từ nút gốc tới nút đó – g(n), cộng với chi phí từ nút đó đến đích – h(n). 
+                                                        `f(n) = g(n) + h(n)`
       Với f(n) = ước lượng chi phí của lời giải “tốt nhất” qua n, ta sẽ chọn nút có giá trị f(n) nhỏ nhất, sau đó xét tới nút con của nó và tiếp tục chọn nút có giá trị f(n) nhỏ nhất. Do ở mỗi bước ta đã chọn nút “tối ưu” nên đó chính là đường đi “tốt nhất” mà không cần phải xét thêm các nút khác cùng bậc.
    - Ưu điểm: tìm được lời giải “tối ưu” nhất cho đường đi.
    - Khuyết điểm: phụ thuộc vào cách chọn hàm heuristic h(n). Hàm heuristic chấp nhận được không bao giờ vượt quá chi phí để đến đích thật sự thì mới đảm bảo tìm được lời giải tối ưu.
